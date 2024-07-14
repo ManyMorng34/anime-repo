@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <h1>From User Input</h1>
+        <form >
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Enter Username"><br><br>
+            <label for="email">Email</label>
+            <input type="email"  id="email" placeholder="Enter Email"><br><br>
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter password"><br><br>
+            <label for="gender">Select Gender</label><br>
+            <label for="male" >male</label>
+            <input type="radio" name="gender" id="gender">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="gender"><br><br>
+            <label for="dob">Date of birth</label>
+            <input type="date" name="" id="dob"><br><br>   
+            <label for="number">Number</label>
+            <input type="number"  id="number"><br><br>
+            <label for="file">Upload file</label><br>
+            <input type="file" name="file" id="file" multiple/><br><br>
+            <label for="phone">Phone number</label>
+            <input type="tel"  id="phone"><br><br>
+            <label for="course">Select course</label>
+            <select  id="course">
+                <option value="java">java</option>
+                <option value="phython">phython</option>
+                <option value="css">css</option>
+            </select><br><br>
+
+            <label for="message">Message</label>
+            <textarea name="meassage" id="massage" cols="50" rows="4" placeholder="Input message"></textarea><br><br>
+            
+            <label for="text"></label>
+            <input list="text-suggest" name="" id="text">
+            <datalist id="text-suggest">
+                <option value="Html">
+                <option value="Css">
+                <option value="Javascript">
+                <option value="tailwind">
+                <option value="Jquery">
+              </datalist>
+            
+            
+            <br><br>
+            <input type="submit" name="" id="">
+
+            <br><br>
+            <input type="reset" value="reset">
+        </form>
+    </main>
+</body>
+</html>

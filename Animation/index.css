@@ -1,0 +1,98 @@
+/* main{
+    display: grid;
+    gap: 20px;
+    place-content: center;
+    & .box{
+        width: 200px;
+        height: 300px;
+        display: grid;
+        background-color: burlywood;
+        place-content: center;
+    }
+} */
+main{
+    display: grid;
+    gap: 20px;
+    place-content: center;
+    & .box{
+        width: 200px;
+        height: 200px;
+        display: grid;
+        background-color: pink;
+        place-content: center;
+
+    }
+    & .box:nth-child(1){
+        background-color: rgb(255, 255, 198);
+        transform: translateX(100px);
+        
+    }
+    & .box:nth-child(1):hover{
+        background-color: rgb(235, 235, 32);
+        transform: translateY(100px);
+       
+        
+    }
+    & .box:nth-child(2){
+        background-color: rgb(174, 235, 255);
+        transform: rotate(100deg);
+        
+    }
+    
+    & .box:nth-child(2):hover{
+        background-color: rgb(255, 174, 174);
+        transform: rotate(360deg);
+        
+    }
+    & .box:nth-child(2){
+        transition-property: background-color;
+        transition-duration: 10s;
+        animation-delay: 10s;
+        
+    }
+    & .box:nth-child(3){
+        background-color: rgb(255, 195, 217);
+        animation-name: slide;
+        animation-duration: 2s;
+        animation-iteration-count: 2;
+        
+
+    }
+    & .box:nth-child(3):hover{
+        background-color: rgb(195, 200, 255);
+        /* transform: scaleX(6);
+        border-radius: 100%; */
+    }
+    & .box:nth-child(3){
+        transition-property: background-color;
+        transition-duration: 2s;
+    }
+}
+@keyframes slide{
+     0%{
+        transform: translateX(0);
+        background-color: aqua;
+     }
+     20%{
+        transform: translateX(100px);
+        background-color: greenyellow;
+     }
+     40%{
+        transform: translateX(0);
+        background-color: deeppink;
+     }
+     60%{
+        transform: translateX(-200px);
+        background-color: blue;
+     }
+     80%{
+        transform: translateX(0);
+        background-color: rgb(34, 5, 34);
+     }
+     100%{
+        transform: translateY(-500px);
+        background-color: firebrick;
+        transform: rotate(360deg);
+     }
+
+}
